@@ -1,0 +1,36 @@
+# ARTI308 — Lab 3 (EDA) Solution using Dataset.xlsx (Telco Customer Churn)
+
+**Exploratory Data Analysis (EDA)** solution for ARTI308 Lab 3 using **Dataset.xlsx**.
+
+## Files
+- `CCSIT_ARTI308_Lab3_Solution_Telco_EN.ipynb` — The EDA solution notebook
+- `Dataset.xlsx` — The dataset (Telco Customer Churn)
+
+## Dataset Overview
+- Rows: 7043
+- Columns: 21
+- Target: `Churn` (Yes/No)
+
+## What the notebook does (Lab 3 requirements)
+1. Load the dataset and preview it
+2. Check missing values
+3. Check duplicate rows
+4. Show number of rows and columns
+5. Show data types of columns
+6. Clean/convert types (fix `TotalCharges` to numeric)
+7. Descriptive statistics (numeric + categorical)
+8. Univariate analysis (histograms + churn distribution)
+9. Bivariate analysis (churn rate by Contract / InternetService / PaymentMethod + boxplot)
+10. Correlation matrix for numeric columns
+11. `Time-based analysis` using **tenure (months)** as a proxy (churn trend by tenure)
+
+## How to run
+1. Put the notebook and `Dataset.xlsx` in the same folder.
+2. Open the notebook in Jupyter / Colab / VS Code.
+3. Run all cells from top to bottom.
+
+## Notes
+- This dataset does not include calendar dates, so the notebook uses **tenure (months)** as a time proxy.
+- `TotalCharges` may contain blanks for customers with `tenure = 0`.  
+  The notebook converts it to numeric and fills missing values using:
+  `TotalCharges = MonthlyCharges * tenure`.
