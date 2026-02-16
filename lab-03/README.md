@@ -36,9 +36,9 @@
   `TotalCharges = MonthlyCharges * tenure`.
 
 ## New flies:
-1- Data Visualization - Matplotlib.ipynb
+1- Data Visualization - `Matplotlib.ipynb`
 
-2- Data Visualization - Seaborn.ipynb
+2- Data Visualization - `Seaborn.ipynb`
 
 
 1) Load the dataset and preview it
@@ -65,3 +65,33 @@ Why: To document dataset size and confirm it matches expected dimensions.
 
 How: Use `df.dtypes` or `df.info().`
 Why: Correct data types are required for proper calculations and visualizations.
+
+6) Clean/convert types (fix TotalCharges to numeric)
+
+How: Convert TotalCharges to numeric and handle blanks as missing values.
+Why: This column is needed for numeric analysis, but it may contain text/blank values.
+
+7) Descriptive statistics (numeric + categorical)
+
+How: Use describe() for numeric columns and value_counts() for categorical columns.
+Why: To summarize the dataset and understand distributions and common categories.
+
+8) Univariate analysis (histograms + churn distribution)
+
+How: Plot histograms for numeric features and a count plot for Churn.
+Why: To understand each variable on its own and see churn balance (Yes vs No).
+
+9) Bivariate analysis (relationships with churn)
+
+How: Compute churn rates by Contract, InternetService, and PaymentMethod, and draw a boxplot for numeric comparison.
+Why: To identify which customer groups are more likely to churn and how features differ by churn status.
+
+10) Correlation matrix for numeric columns
+
+How: Select numeric columns and compute a correlation matrix (optionally visualize it).
+Why: To find relationships between numeric variables and detect strong associations.
+
+11) Time-based analysis using tenure as a proxy
+
+How: Analyze churn trends across different tenure (months) ranges.
+Why: The dataset has no dates, so tenure is used as a time-like indicator.
