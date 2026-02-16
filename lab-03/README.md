@@ -37,4 +37,11 @@
 
 ## New flies:
 1- Data Visualization - Matplotlib.ipynb
+
 2- Data Visualization - Seaborn.ipynb
+
+
+1) Load the dataset and preview it
+
+How: Read Dataset.xlsx using pandas and preview rows with head() and info().
+Why: To confirm the dataset is loaded correctly and understand its structure quickly.
