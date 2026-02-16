@@ -117,3 +117,27 @@ Controlling axis appearance and plot ranges
 Why it’s useful:
 
 Matplotlib gives you full control over how your plots look and is the foundation for many visualization tools in Python.
+
+## 2) 2- Data Visualization - Seaborn.ipynb
+
+A practical notebook that introduces Seaborn, a high-level library built on top of Matplotlib for statistical data visualization.
+
+What it covers:
+
+Loading sample datasets (e.g., tips, flights)
+
+Distribution plots: distplot, kdeplot, rugplot
+
+Relationship plots: jointplot, pairplot
+
+Categorical plots: barplot, countplot, boxplot, violinplot, stripplot, swarmplot, catplot
+
+Matrix plots: correlation heatmaps and clustermap
+
+Creating pivot tables for heatmaps (e.g., flights passenger data)
+
+Why it’s useful:
+
+Seaborn makes it easier to create clean and informative statistical plots with less code, especially for comparing categories and relationships.
+
+Note: Some Seaborn functions like distplot may be deprecated in newer versions (alternatives include histplot / displot).
