@@ -34,3 +34,7 @@
 - `TotalCharges` may contain blanks for customers with `tenure = 0`.  
   The notebook converts it to numeric and fills missing values using:
   `TotalCharges = MonthlyCharges * tenure`.
+
+## New flies:
+1- Data Visualization - Matplotlib.ipynb
+2- Data Visualization - Seaborn.ipynb
