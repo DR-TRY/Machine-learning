@@ -53,5 +53,15 @@ Why: Missing values can cause errors and affect results, so we must detect them 
 
 3) Check duplicate rows
 
-How: Use duplicated().sum() and remove duplicates if necessary.
+How: Use `duplicated().sum()` and remove duplicates if necessary.
 Why: Duplicates can bias statistics and churn rates.
+
+4) Show number of rows and columns
+
+How: Use df.shape.
+Why: To document dataset size and confirm it matches expected dimensions.
+
+5) Show data types of columns
+
+How: Use `df.dtypes` or `df.info().`
+Why: Correct data types are required for proper calculations and visualizations.
