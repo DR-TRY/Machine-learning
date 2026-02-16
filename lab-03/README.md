@@ -43,5 +43,15 @@
 
 1) Load the dataset and preview it
 
-How: Read Dataset.xlsx using pandas and preview rows with head() and info().
+How: Read Dataset.xlsx using pandas and preview rows with `head()` and `info()`.
 Why: To confirm the dataset is loaded correctly and understand its structure quickly.
+
+2) Check missing values
+
+How: Use  `isna().sum()` to count missing values per column.
+Why: Missing values can cause errors and affect results, so we must detect them early.
+
+3) Check duplicate rows
+
+How: Use duplicated().sum() and remove duplicates if necessary.
+Why: Duplicates can bias statistics and churn rates.
